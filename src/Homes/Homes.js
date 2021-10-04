@@ -42,7 +42,7 @@ const Homes = () => {
                                 <Col xs={12} md={6}>
                                    <h1 className="fw-bold">Intriduce of Our Service</h1>
 
-                                   <p className="fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi modi voluptatibus iure perferendis repellendus, at necessitatibus eaque, distinctio itaque nihil ex dolores vero eum maiores consectetur reiciendis placeat quae, accusamus possimus ullam sint illum quidem error aperiam. Corrupti, ducimus dicta? Incidunt pariatur nesciunt fugiat debitis reiciendis maxime aspernatur aperiam. Eveniet, sit magnam, placeat in sequi dolorum deserunt quo at eius quasi tempora distinctio recusandae veritatis, exercitationem corporis odit qui officiis molestiae animi ad.</p>
+                                   <p className="fs-4">Unique It servicing Center is a technology based institution in Feni Sadar Upazila, Bangladesh. It is directed under The Directorate of Technical Education(DTE). This is the first government ICT based polytechnic institute for diploma in engineering courses in Bangladesh. It provides diploma in engineering program in three technologies, they are 1. Data Telecommunication and Networking (DTNT), 2. Computer Science and Technology (CST) and 3. Telecommunication Technology.</p>
                                    <Button className="p-2">{element} Clik thiss</Button>
                                 </Col>
                             </Row>
