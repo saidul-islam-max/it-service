@@ -31,9 +31,7 @@ function App() {
          <Route path="/home">
            <Homes></Homes>
          </Route>
-         <Route path="/">
-           <Homes></Homes>
-         </Route>
+        
          <Route path="/about">
            <About></About>
          </Route>
