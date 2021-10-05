@@ -12,7 +12,7 @@ const Header = () => {
             <Navbar bg="light" expand="lg" className="fw-bold">
                 <Container>
 
-                <Navbar.Brand to="/home"><h1 class="logo">UISC</h1></Navbar.Brand>
+                <Navbar.Brand to="/home"><h1 className="logo">UISC</h1></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
 
@@ -28,7 +28,7 @@ const Header = () => {
                             color: "black"
                         }}
                         >
-                       home
+                       Home
                     </NavLink>
 
                     <NavLink className="mx-2"
@@ -47,7 +47,7 @@ const Header = () => {
                             color: "black"
                         }}
                         >
-                     service
+                     Service
                     </NavLink>
                 
                     <NavLink className="mx-2 text-dar"
@@ -57,7 +57,7 @@ const Header = () => {
                             color: "black"
                         }}
                         >
-                    contact
+                    Contact
                     </NavLink>
 
                    

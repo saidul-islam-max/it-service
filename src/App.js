@@ -32,6 +32,7 @@ function App() {
            <Homes></Homes>
          </Route>
         
+        
          <Route path="/about">
            <About></About>
          </Route>

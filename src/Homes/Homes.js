@@ -2,7 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, Row ,Button, Card } from 'react-bootstrap';
 
-import img from '../img/1.jpg'
+
+import img from '../img/2.jpg'
+
 import './Homes.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faClipboardCheck} from '@fortawesome/free-solid-svg-icons';
@@ -19,20 +21,23 @@ const Homes = () => {
     }, [])
     const element = <FontAwesomeIcon icon={faClipboardCheck} />
     return (
-        <div className=" ">
+        <div >
             <div className="home-img text-center">
-             <div class=" home-text w-50">
+             <div className=" home-text w-75">
            
-             <h1 className="text-light">Wellcome to <span class="text-warning">Unique It servicing Center</span></h1>
-             
-             <p class="text-light">Unique It servicing Center is a technology based institution in Feni Sadar Upazila, Bangladesh. It is directed under The Directorate of Technical Education(DTE). </p>
+             <h1 className="text-light">Wellcome to <span className="text-warning">Unique It servicing Center</span></h1>
+             <div>
+             <p className="text-light">Unique It servicing Center is a technology based institution in Feni Sadar Upazila, Bangladesh. It is directed under The Directorate of Technical Education(DTE). </p>
 
-             <button type="button" class="btn btn-warning btn-home mt-4">Click Here</button>
+             <button type="button" className="btn btn-warning btn-home mt-4">Click Here</button>
+
+             </div>
+             
              </div>
            </div>
 
                {/* ---------About section------- */}
-                   <div class="card pt-5 pb-5 bg-light" >
+                   <div className="card pt-5 pb-5 bg-light" >
                    <Container>
                             <Row>
                                 <Col xs={12} md={6}>
@@ -41,9 +46,18 @@ const Homes = () => {
                                 
                                 <Col xs={12} md={6}>
                                    <h1 className="fw-bold">Intriduce of Our Service</h1>
-
-                                   <p className="fs-4">Unique It servicing Center is a technology based institution in Feni Sadar Upazila, Bangladesh. It is directed under The Directorate of Technical Education(DTE). This is the first government ICT based polytechnic institute for diploma in engineering courses in Bangladesh. It provides diploma in engineering program in three technologies, they are 1. Data Telecommunication and Networking (DTNT), 2. Computer Science and Technology (CST) and 3. Telecommunication Technology.</p>
+                                   <div className="p-3">
+                                   <p className="about-text">Unique It servicing Center is a technology based institution in Feni Sadar Upazila, Bangladesh. It is establish in 2008 5th march.Mopstak Ahmed this company CEO and Funder . It is directed under The Directorate of Technical srvice center. The service of Unique IT Center is much better than any other service center</p>
+                                   <p className="about-text ps-5  border-start border-dark border-4">
+                                   Our aim is to provide service to the customer and satisfy the customer's 100% percentage.
+                                   </p>
+                                   <p className="about-text">
+                                   The IT Service Center is dedicated to contribute to the academic growth of the campus community. Contact the IT Service Center to get help with all OIT services, email and IdentiKey, on campus Internet connectivity, telephone service and other technology-related questions.
+                                   </p>
+                                   </div>
                                    <Button className="p-2">{element} Clik thiss</Button>
+
+                                   
                                 </Col>
                             </Row>
                             </Container>
@@ -57,7 +71,7 @@ const Homes = () => {
                     <Row>
                         
                         {
-                            service.map(service =>  <Col service={service} xs={12} md={3} className="text-center service-img mt-4" >
+                            service.slice(0,4).map(service =>  <Col service={service} xs={12} key={service.type} md={3} className="text-center service-img mt-4" >
                             <Image src={service.imgService} className="img-service" hegiht="" roundedCircle />
                             <h4>{service.type}</h4>
                             </Col>)
@@ -72,7 +86,7 @@ const Homes = () => {
 
 {/*---------------------- service man section end--------------- */}
 
-<div className="mt-5 mb-5 bg-light">
+<div className="mt-5 mb-5 bg-light mt-5">
                   <Container>
                       <div className="text-center">
                            <h1>Our Team</h1>
@@ -80,7 +94,7 @@ const Homes = () => {
                     <Row>
                         
                         {
-                            service.map(service =>  <Col service={service} xs={12} md={4} className="text-center  mt-4" >
+                            service.slice(0,11).map(service =>  <Col service={service} xs={12} md={4} className="text-center  mt-4" >
                             <Card >
                                <Card.Img variant="top" className="team-img" src={service.img} />
                                <Card.Body>

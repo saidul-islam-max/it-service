@@ -15,9 +15,13 @@ const Services = () => {
             <Container>
                 <Row>
                 {
-                service.map(service => <Col service={service} xs={12} md={3} className="text-center service-img mt-4" >
+                service.map(service => 
+                <Col service={service}  key={service.type} xs={12} md={3} className="text-center service-img mt-4" >
+
                 <Image src={service.imgService} className="img-service" hegiht="" rounded />
+                
                 <h4>{service.type}</h4>
+                  <p>{service.contact}</p>
                 </Col>)
                  }
                 </Row>

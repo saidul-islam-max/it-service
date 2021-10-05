@@ -5,7 +5,7 @@ import img from '../../img/1.jpg'
 const About = () => {
     return (
         <div>
-             <div class="card pt-5 pb-5 bg-light" >
+             <div className="card pt-5 pb-5 bg-light" >
                    <Container>
                             <Row>
                                 <Col xs={12} md={6}>
@@ -15,7 +15,15 @@ const About = () => {
                                 <Col xs={12} md={6}>
                                    <h1 className="fw-bold">About</h1>
 
-                                   <p className="fs-4">Unique It servicing Center is a technology based institution in Feni Sadar Upazila, Bangladesh. It is directed under The Directorate of Technical Education(DTE). This is the first government ICT based polytechnic institute for diploma in engineering courses in Bangladesh. It provides diploma in engineering program in three technologies, they are 1. Data Telecommunication and Networking (DTNT), 2. Computer Science and Technology (CST) and 3. Telecommunication Technology.</p>
+                                   <div className="p-3">
+                                   <p className="about-text">Unique It servicing Center is a technology based institution in Feni Sadar Upazila, Bangladesh. It is establish in 2008 5th march.Mopstak Ahmed this company CEO and Funder . It is directed under The Directorate of Technical srvice center. The service of Unique IT Center is much better than any other service center</p>
+                                   <p className="about-text ps-5  border-start border-dark border-4">
+                                   Our aim is to provide service to the customer and satisfy the customer's 100% percentage.
+                                   </p>
+                                   <p className="about-text">
+                                   The IT Service Center is dedicated to contribute to the academic growth of the campus community. Contact the IT Service Center to get help with all OIT services, email and IdentiKey, on campus Internet connectivity, telephone service and other technology-related questions.
+                                   </p>
+                                   </div>
                                    
                                 </Col>
                             </Row>
